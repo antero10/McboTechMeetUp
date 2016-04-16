@@ -13,3 +13,12 @@ Este proyecto es el codigo ejemplo mostrado en el McboTechMeetUp el 16/04/2016.
 * Si luego de correr `vagrant up` presenta unas fallas bajando el [box](https://www.vagrantup.com/docs/boxes.html) `vagrant box add ubuntu/trusty64 https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20160323.0.0/providers/virtualbox.box`
 
 * Automaticamente luego de correr `vagrant up` ansible se ejecuta, de todas maneras si se requiere correrlo de nuevo se puede ejecutar `vagrant provision`
+
+
+# Ansible
+
+Este playbook ejecuta las siguientes tareas:
+
+  * Instala nginx con una configuracion default
+  * Instala un certificado auto firmado de ssl
+  * 
