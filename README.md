@@ -19,6 +19,10 @@ Este proyecto es el codigo ejemplo mostrado en el McboTechMeetUp el 16/04/2016.
 
 Este playbook ejecuta las siguientes tareas:
 
-  * Instala nginx con una configuracion default
-  * Instala un certificado auto firmado de ssl
-  * 
+  * Instala todo lo correspondiente a Node para correr el app
+
+
+# Docker
+Este docker genera un contenedor para correr Node dentro de el. Para generarlo se puede correr `docker build -t any_app_name .`
+
+Luego para correr el contenedor `docker run -d --name any_container_name -p any_container_port:8080 any_app_name`
