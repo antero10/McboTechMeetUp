@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder Dir.pwd, "/app/"
 
   config.vm.define :McboTechMeetUp do |conf|
-    conf.vm.network :forwarded_port, guest: 8585, host: 8585, ngrok_proto: "http+https"
+    conf.vm.network :forwarded_port, guest: 8080, host: 8585, ngrok_proto: "http+https"
   end
 
   config.vm.provision :ansible do |ansible|
